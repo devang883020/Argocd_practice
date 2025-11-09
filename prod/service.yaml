@@ -3,16 +3,16 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: lwweb
+    app: myweb
     app.kubernetes.io/instance: myargoapp1
-  name: lwweb
+  name: myweb
 spec:
   ports:
   - port: 80
     protocol: TCP
     targetPort: 80
   selector:
-    app: lwweb
+    app: myweb
   type: LoadBalancer
 status:
   loadBalancer: {}
